@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+         .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 3rem;
+        }
+        
+        .box {
+            padding: 3rem;
+            padding-top: 2rem;
+            padding-bottom: 8rem;
+        }
+
+        #c {
+        width: 100%;
+        height: 100%;
+        display: block;
+        border: 1px solid black;
+         }
+
+        .file-item {
+            cursor: pointer; 
+            list-style-type: none;
+        }
+        .btn-remove {
+            display: inline-block;
+            margin-left: 2rem;
+            color: white;
+            cursor: pointer;
+            border: 1px solid red;
+            background-color: red;
+            padding: 0.2rem 0.5rem;
+            font-size: 0.6rem;
+        }
+
+    </style>
+    <title>Adm</title>
+</head>
+<body>
+    <div class="container" id="conteudo">
+        <div class="box">
+            <h1>Olá,</h1>
+            <p>Aqui será listado todos os modelos para visualização</p>
+            <h2>Modelos disponíveis:</h2>
+            <ul id="fileList"></ul>
+            <h3>Visualização do Modelo</h3>
+            <div class="container" id="figura">        
+            <canvas id="c"></canvas>
+            </div>
+        </div>
+    </div>
+    
+    <script type="module" src="three.js"></script>
+    <script type="module" src="adm.js"></script>
+
+</body>
+</html>

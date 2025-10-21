@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 3rem;
+      }
+
+      .box {
+        padding: 3rem;
+        padding-top: 2rem;
+        padding-bottom: 8rem;
+      }
+    </style>
+    <title>User</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <h1>Olá,</h1>
+        <p>Essa página é responsável pela entrega do modelo 3D</p>
+          <label for="arquivo">Escolha o arquivo:</label>
+          <input
+            type="file"
+            id="fileInput"
+            accept=".glb,.gltf,.obj"
+          />
+          <button id="uploadBtn">Enviar</button>
+      </div>
+    </div>
+    <script type="module" src="usuario.js"></script>
+  </body>
+</html>
